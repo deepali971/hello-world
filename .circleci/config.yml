@@ -3,9 +3,9 @@ jobs:
    one:
      docker:
        -image: cing/ruby:2.6.8
-        auth:
-         username: deepalimalik
-         password: $DOCKERRHUB_PASSWORD
+         auth:
+          username: deepalimalik
+          password: $DOCKERRHUB_PASSWORD
       steps:
         - checkout
         - run: echo "A first hello"
@@ -13,9 +13,9 @@ jobs:
     two:
       docker:
         - image: cing/ruby:3.0.2
-          auth:
-          username: deepalimalik
-          password: $DOCKERRHUB_PASSWORD
+           auth:
+             username: deepalimalik
+             password: $DOCKERRHUB_PASSWORD
       steps:
         - checkout
         - run: echo "A more familier hi"
