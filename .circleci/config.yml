@@ -10,8 +10,8 @@ jobs:
         - checkout
         - run: echo "A first hello"
         - run: sleep 15
-    two:
-      docker:
+   two:
+     docker:
         - image: cing/ruby:3.0.2
            auth:
              username: deepalimalik
