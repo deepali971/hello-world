@@ -3,7 +3,7 @@ jobs:
    one:
      docker:
        -image: cing/ruby:2.6.8
-         auth:
+        auth:
            username: deepalimalik
            password: $DOCKERRHUB_PASSWORD
       steps:
@@ -13,7 +13,7 @@ jobs:
    two:
      docker:
         - image: cing/ruby:3.0.2
-           auth:
+          auth:
              username: deepalimalik
              password: $DOCKERRHUB_PASSWORD
       steps:
