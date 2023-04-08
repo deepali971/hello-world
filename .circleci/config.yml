@@ -4,8 +4,8 @@ jobs:
      docker:
        -image: cing/ruby:2.6.8
          auth:
-          username: deepalimalik
-          password: $DOCKERRHUB_PASSWORD
+           username: deepalimalik
+           password: $DOCKERRHUB_PASSWORD
       steps:
         - checkout
         - run: echo "A first hello"
