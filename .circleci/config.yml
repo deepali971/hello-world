@@ -2,9 +2,9 @@ version: 2
 jobs:
    one:
      docker:
-       -image: cing/ruby:2.6.8
+       -image: cimg/ruby:2.6.8
         auth:
-          username: mydockerhub--user
+          username: deepalimalik--user
           password: $DOCKERRHUB_PASSWORD
      steps:
         - checkout
@@ -13,9 +13,9 @@ jobs:
    
    two:
      docker:
-        - image: cing/ruby:3.0.2
+        - image: cimg/ruby:3.0.2
           auth:
-            username: mydockerhub--user
+            username: deepalimalik--user
             password: $DOCKERRHUB_PASSWORD
      steps:
         - checkout
